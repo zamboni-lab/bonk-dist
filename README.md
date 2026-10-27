@@ -1,18 +1,18 @@
-# bonk!
-**`bonk`** (Born–Oppenheimer Non-equilibrium Kinetics) is a standalone, zero-dependency executable that takes a precursor compound (**SMILES**, **2D `.mol`/`.sdf`**, or **3D `.sdf`/`.mol`/`.xyz`**) and a list of observed **MS/MS fragment `m/z` values**, and generates ranked candidate **fragment `SMILES` structures**, posterior probabilities (`conf=%`), and a mechanistic explanation of how each fragment ion was formed.
+﻿# bonk!
+**`bonk`** (Bornâ€“Oppenheimer Non-equilibrium Kinetics) is a standalone, zero-dependency executable that takes a precursor compound (**SMILES**, **2D `.mol`/`.sdf`**, or **3D `.sdf`/`.mol`/`.xyz`**) and a list of observed **MS/MS fragment `m/z` values**, and generates ranked candidate **fragment `SMILES` structures**, posterior probabilities (`conf=%`), and a mechanistic explanation of how each fragment ion was formed.
 
 **License & Notice**: (c) Zamboni Lab, ETH Zurich. Provided strictly for **non-commercial academic research and testing only**.
 
 
 ## How It Works: First-Principles Quantum Chemistry
 
-In day-to-day workflow, **`bonk`** addresses the same problem as **ChemFrag**, **MetFrag**, **MS-FINDER**, or **CFM-ID**: given a known or candidate precursor molecule and a list of experimental MS²/MS³ fragment $m/z$ peaks, it assigns chemical structures (`SMILES`) and confidence scores to each peak. However, instead of heuristic rule tables or purely combinatorial graph cutting, `bonk` is built on a **first-principles quantum-chemical and molecular dynamics engine** inspired by (QCxMS)[https://xtb-docs.readthedocs.io/en/latest/qcxms_doc/qcxms.html] and other seminal work by the group of Stefan Grimme (University of Bonn). 
+In day-to-day workflow, **`bonk`** addresses the same problem as **ChemFrag**, **MetFrag**, **MS-FINDER**, or **CFM-ID**: given a known or candidate precursor molecule and a list of experimental MSÂ²/MSÂ³ fragment $m/z$ peaks, it assigns chemical structures (`SMILES`) and confidence scores to each peak. However, instead of heuristic rule tables or purely combinatorial graph cutting, `bonk` is built on a **first-principles quantum-chemical and molecular dynamics engine** inspired by (QCxMS)[https://xtb-docs.readthedocs.io/en/latest/qcxms_doc/qcxms.html] and other seminal work by the group of Stefan Grimme (University of Bonn). 
 
-Under the hood, `bonk` embeds a 3D conformer, a GFN2-xTB quantum-chemical engine, Born–Oppenheimer Molecular Dynamics, a RRKM/QET cascade, and much more... and is built for speed.
+Under the hood, `bonk` embeds a 3D conformer, a GFN2-xTB quantum-chemical engine, Bornâ€“Oppenheimer Molecular Dynamics, a RRKM/QET cascade, and much more... and is built for speed.
 
 ## Quick Start
 
-No installation, Python environment, or external parameter files are required—everything is self-contained inside `bonk.exe` (Windows) and `bonk` (Linux / WSL2).
+No installation, Python environment, or external parameter files are requiredâ€”everything is self-contained inside `bonk.exe` (Windows) and `bonk` (Linux / WSL2).
 
 ```powershell
 # Windows (PowerShell / CMD):
@@ -27,7 +27,7 @@ chmod +x ./bonk
 
 ```text
 ============================================================================
-  BONK! v0.1.0 (c) Zamboni Lab. Non-commercial use & testing only.
+  BONK! v0.2.1 (c) Zamboni Lab. Non-commercial use & testing only.
 ============================================================================
   Precursor : CC(=O)Oc1ccccc1C(=O)O  (C9H8O4, [M+H]+ m/z = 181.04954)
 ----------------------------------------------------------------------------
@@ -109,7 +109,7 @@ Run `bonk.exe` directly on a 3D `.xyz` conformer ([`examples/caffeine_3d.xyz`](e
 ```
 
 ### Example 5: Negative Ion Mode (`--adduct "[M-H]-"`)
-Analyze negative-mode `[M-H]-` fragments of **α-Aminoadipic acid**:
+Analyze negative-mode `[M-H]-` fragments of **Î±-Aminoadipic acid**:
 ```powershell
 .\bonk.exe -c "NC(CCCC(=O)O)C(=O)O" --adduct "[M-H]-" -m "142.0504, 116.0712, 98.0606"
 ```
