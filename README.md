@@ -10,7 +10,7 @@ Under the hood, `bop` embeds a 3D conformer, a GFN2-xTB quantum-chemical engine,
 
 ## Quick Start
 
-No installation, Python environment, or external parameter files are required—everything is self-contained inside `bop.exe` (Windows), `bop` (Linux / WSL2), and `bop-macos-arm` (macOS Apple Silicon / ARM64).
+Everything is self-contained inside `bop.exe` (Windows), `bop` (Linux / WSL2), and `bop-macos-arm` (macOS Apple Silicon / ARM64).
 
 ```powershell
 # Windows (PowerShell / CMD):
