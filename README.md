@@ -1,14 +1,12 @@
 # bop!
 **`bop`** is a standalone executable that takes a precursor compound and a list of observed **MS/MS fragment `m/z` values**, and generates ranked candidate **fragment `SMILES` structures**, posterior probabilities, and a mechanistic explanation of how each fragment ion was formed.
 
-**License & Notice**: (c) Zamboni Lab, ETH Zurich. Provided strictly for **non-commercial academic research and testing only**.
-
-
-## How It Works: First-Principles Quantum Chemistry
-
 In day-to-day workflow, **`bop`** addresses the same problem as **ChemFrag**, **MetFrag**, **MS-FINDER**, or **CFM-ID**: given a known or candidate precursor molecule and a list of experimental MS²/MS³ fragment $m/z$ peaks, it assigns chemical structures (`SMILES`) and confidence scores to each peak. However, instead of heuristic rule tables or purely combinatorial graph cutting, `bop` is built on a **first-principles quantum-chemical and molecular dynamics engine** inspired by [QCxMS](https://xtb-docs.readthedocs.io/en/latest/qcxms_doc/qcxms.html) and other seminal work by the group of Stefan Grimme (University of Bonn).
 
 Under the hood, `bop` embeds a 3D conformer, a GFN2-xTB quantum-chemical engine, Born–Oppenheimer Molecular Dynamics, a RRKM/QET cascade, and much more... and is built for speed.
+
+**License & Notice**: (c) Zamboni Lab, ETH Zurich. Provided strictly for **non-commercial academic research and testing only**. The public version is capped in speed (100x slower) and throughput (1 spectrum per run)
+
 
 ## Quick Start
 
