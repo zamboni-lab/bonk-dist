@@ -1,0 +1,7 @@
+# Never track Rust source or build artifacts in the binary distribution repo
+*.rs
+Cargo.toml
+Cargo.lock
+/src/
+/target/
+*.pdb
