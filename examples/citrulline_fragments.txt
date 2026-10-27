@@ -1,0 +1,9 @@
+# L-Citrulline [M+H]+ (m/z 176.1030) FELIX IRIS MS2/MS3 fragments (van Tetering et al., 2024)
+159.0764
+158.0924
+141.0659
+130.0975
+116.0706
+115.0866
+113.0709
+70.0651

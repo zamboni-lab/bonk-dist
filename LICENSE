@@ -1,0 +1,49 @@
+BOP! NON-COMMERCIAL EVALUATION AND TESTING LICENSE
+
+Copyright (c) 2026 Zamboni Lab, ETH Zurich. All rights reserved.
+
+1. GRANT OF LIMITED LICENSE (TESTING & NON-COMMERCIAL EVALUATION ONLY)
+Subject to the terms and conditions of this License, Zamboni Lab, ETH Zurich
+("Licensor") grants you a non-exclusive, non-transferable, revocable,
+royalty-free license to download, install, and execute the provided `bop`
+software binaries (`bop`, `bop.exe`, `bop-macos-arm`) and accompanying
+documentation and examples (collectively, the "Software") solely for
+non-commercial testing, evaluation, benchmarking, and academic research.
+
+2. NO COMMERCIAL USE
+You may NOT use the Software for any commercial purpose without a separate
+prior written agreement with ETH Zurich / Zamboni Lab. Prohibited commercial
+uses include, without limitation:
+  (a) Selling, leasing, licensing, or otherwise monetizing the Software or
+      any service, platform, or workflow that invokes the Software;
+  (b) Bundling, embedding, or distributing the Software with any commercial
+      hardware, mass spectrometry instrument software, or commercial software
+      package;
+  (c) Using the Software in commercial research and development, contract
+      research, fee-for-service analysis, or commercial spectral library
+      production by or on behalf of any for-profit organization.
+
+3. RESTRICTIONS ON REDISTRIBUTION & REVERSE ENGINEERING
+  (a) You may not redistribute, sublicence, or host the Software binaries for
+      third-party access without prior written permission from the Licensor.
+  (b) You may not decompile, disassemble, reverse-engineer, or attempt to
+      extract the underlying source code, embedded quantum-chemical models,
+      or parameters of the Software, except to the extent such restriction is
+      expressly prohibited by applicable law.
+
+4. ATTRIBUTION
+Any academic publication, preprint, presentation, or report that includes
+results generated while testing or evaluating the Software shall acknowledge
+`bop` (Zamboni Lab, ETH Zurich).
+
+5. DISCLAIMER OF WARRANTY
+THE SOFTWARE IS EXPERIMENTAL AND IS PROVIDED "AS IS", FOR TESTING AND
+EVALUATION ONLY, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, ACCURACY OF SCIENTIFIC OR SPECTRAL PREDICTIONS, AND NONINFRINGEMENT.
+
+6. LIMITATION OF LIABILITY
+IN NO EVENT SHALL THE AUTHORS, ZAMBONI LAB, OR ETH ZURICH BE LIABLE FOR ANY
+CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR
+OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+OR OTHER DEALINGS IN THE SOFTWARE.

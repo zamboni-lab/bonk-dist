@@ -1,0 +1,9 @@
+# Binary-only distribution repository - never commit source code or build artifacts
+*.rs
+Cargo.toml
+Cargo.lock
+src/
+target/
+*.pdb
+*.d
+*.pdf
