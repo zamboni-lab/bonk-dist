@@ -74,7 +74,7 @@ Options:
   -n, --ntraj <NTRAJ>        Number of parallel 3D GFN2-xTB Born-Oppenheimer MD trajectories [default: 100]
   -t, --tol <TOL>            Mass matching tolerance in Daltons (Da) [default: 0.05]
   -k, --top-k <TOP_K>        Maximum number of candidate SMILES structures to report per fragment m/z [default: 3]
-  -F, --format <FORMAT>      Output format: "csv" or "json" [default: csv] [possible values: csv, json]
+  -F, --format <FORMAT>      Output format: "default" (screen table), "csv", or "json" [default: default] [possible values: default, csv, json]
   -o, --out <OUT>            Optional output file path (writes to stdout if omitted)
   -h, --help                 Print help
   -V, --version              Print version
