@@ -1,5 +1,5 @@
 # bop!
-**`bop`** (Born–Oppenheimer Product-ions) is a standalone, zero-dependency executable that takes a precursor compound (**SMILES**, **2D `.mol`/`.sdf`**, or **3D `.sdf`/`.mol`/`.xyz`**) and a list of observed **MS/MS fragment `m/z` values**, and generates ranked candidate **fragment `SMILES` structures**, posterior probabilities (`conf=%`), and a mechanistic explanation of how each fragment ion was formed.
+**`bop`** is a standalone executable that takes a precursor compound and a list of observed **MS/MS fragment `m/z` values**, and generates ranked candidate **fragment `SMILES` structures**, posterior probabilities, and a mechanistic explanation of how each fragment ion was formed.
 
 **License & Notice**: (c) Zamboni Lab, ETH Zurich. Provided strictly for **non-commercial academic research and testing only**.
 
