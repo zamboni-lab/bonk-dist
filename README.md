@@ -27,16 +27,32 @@ chmod +x ./bonk
 
 ```text
 ============================================================================
-  BONK! v0.2.0 (c) Zamboni Lab. Non-commercial use & testing only.
+  BONK! v0.1.0 (c) Zamboni Lab. Non-commercial use & testing only.
 ============================================================================
-  Precursor : NC(=O)NCCCC(N)C(=O)O  (C6H13N3O3, [M+H]+ m/z = 176.10297)
+  Precursor : CC(=O)Oc1ccccc1C(=O)O  (C9H8O4, [M+H]+ m/z = 181.04954)
 ----------------------------------------------------------------------------
-query_mz,rank,fragment_smiles,formula,exact_mz,error_mda,error_ppm,confidence_pct,sim_intensity,mechanism_class,comment
-159.07640,1,"[NH3+]C(CCCN=C=O)C(=O)O","C6H11N2O3+",159.07642,-0.02,-0.1,74.7,981.3,"Precursor Neutral/Radical Loss","Precursor -NH3: charge-directed deamination (from N1); beta-elimination to ketene/isocyanate (-N=C=O / =C=O)"
-159.07640,2,"[NH3+]C(=O)N1CCCC1C(=O)O","C6H11N2O3+",159.07642,-0.02,-0.1,25.3,981.3,"Precursor Neutral/Radical Loss (Regioisomer)","Precursor -NH3 regioisomer: charge-directed deamination (from N9 on C8)"
-158.09240,1,"[NH3+]C(=O)N1CCCC(N)C1=O","C6H12N3O2+",158.09240,+0.00,+0.0,59.1,645.2,"Precursor Neutral/Radical Loss","Precursor -H2O: 1,2/1,3 through-space dehydration (from O12); Baldwin 5/6-membered nucleophilic ring closure (lactam/pyrrolone/cyclic iminium)"
-116.07060,1,"[NH2+]1C(CCC1)C(=O)O","C5H10NO2+",116.07060,+0.00,+0.0,92.0,812.4,"MD Trajectory Cleavage","MD bond rupture of N4-C5 (+0H); Baldwin 5/6-membered nucleophilic ring closure (lactam/pyrrolone/cyclic iminium)"
-70.06510,1,"C1CC=[NH+]C1","C4H8N+",70.06513,-0.03,-0.4,84.2,1000.0,"Secondary Cascade (Cut + Neutral Loss)","Secondary cascade: 1-bond cleavage of C5-N4 (+0H) followed by -HCOOH (formic acid elimination) -> Baldwin 5/6-membered nucleophilic ring closure (lactam/pyrrolone/cyclic iminium)"
+
+Fragment m/z 180.0499
+  [1] [O+]=C(c1ccccc1OC(C)=O)O      # C9H8O4+ | exact m/z=180.04171 (+8.2 mDa, +45.5 ppm, conf=100.0%) | Precursor -H.: homolytic H-atom radical loss
+
+Fragment m/z 163.0390
+  [1] [O+]#Cc1ccccc1OC(C)=O         # C9H7O3+ | exact m/z=163.03897 (+0.0 mDa, +0.2 ppm, conf=61.5%) | Precursor -H2O: 1,2/1,3 through-space dehydration (from O13); acylium triple-bond closure (-C#[O+])
+  [2] [CH2+][C]Oc1ccccc1C(=O)O      # C9H7O3+ | exact m/z=163.03897 (+0.0 mDa, +0.2 ppm, conf=21.8%) | Precursor -H2O regioisomer: 1,2/1,3 through-space dehydration (from O3 on C2)
+  [3] [CH2+]C(=O)Oc1ccccc1[C]O      # C9H7O3+ | exact m/z=163.03897 (+0.0 mDa, +0.2 ppm, conf=16.7%) | Precursor -H2O regioisomer: 1,2/1,3 through-space dehydration (from O12 on C11)
+
+Fragment m/z 138.0311
+  [1] [O+]=C(c1ccccc1O)O            # C7H6O3+ | exact m/z=138.03115 (-0.0 mDa, -0.3 ppm, conf=91.8%) | MD bond rupture of C2-O4 (+1H)
+  [2] [OH+]=C([C]([CH])[C](O[CH])[CH][CH])O  # C7H6O3+ | exact m/z=138.03115 (-0.0 mDa, -0.3 ppm, conf=8.2%) | 4-bond cleavage breaking [C1-C2, C2-O3, C7-C8, C8-C9] (+2H)
+
+Fragment m/z 121.0284
+  [1] [c+]1ccccc1C(=O)O             # C7H5O2+ | exact m/z=121.02841 (-0.0 mDa, -0.0 ppm, conf=60.5%) | MD bond rupture of O4-C5 (+0H)
+  [2] [O+]#COc1ccccc1               # C7H5O2+ | exact m/z=121.02841 (-0.0 mDa, -0.1 ppm, conf=24.0%) | Precursor -CH3COOH: McLafferty / 1,2-acetic acid elimination (from C1, C11, O12, O13); acylium triple-bond closure (-C#[O+])
+  [3] [O+]#Cc1ccccc1O               # C7H5O2+ | exact m/z=121.02841 (-0.0 mDa, -0.0 ppm, conf=15.6%) | Secondary cascade: 1-bond cleavage of C2-O3 (-1H) followed by -CH2CO (ketene elimination) -> acylium triple-bond closure (-C#[O+])
+
+Fragment m/z 93.0335
+  [1] [c+]1ccccc1O                  # C6H5O+ | exact m/z=93.03349 (+0.0 mDa, +0.1 ppm, conf=88.0%) | Secondary cascade: 1-bond cleavage of O4-C2 (+0H) followed by -CO2 (decarboxylation)
+  [2] O=C1C=CC=[CH+]C1              # C6H5O+ | exact m/z=93.03349 (+0.0 mDa, +0.1 ppm, conf=7.1%) | Skeletal rearrangement to phenoxy [C6H5O]+ ion
+  [3] [CH2+][C]O[C][CH][CH][CH]     # C6H5O+ | exact m/z=93.03349 (+0.0 mDa, +0.1 ppm, conf=4.9%) | 2-bond cross-ring cleavage of C8-C9 and C5-C10 (+1H) followed by -H2O
 ```
 
 ---
