@@ -6,8 +6,9 @@
 
 ## How It Works: First-Principles Quantum Chemistry
 
-In day-to-day workflow, **`bonk`** addresses the same problem as **ChemFrag**, **MetFrag**, **MS-FINDER**, or **CFM-ID**: given a known or candidate precursor molecule and a list of experimental MS²/MS³ fragment $m/z$ peaks, it assigns chemical structures (`SMILES`) and confidence scores to each peak. However, instead of heuristic rule tables or purely combinatorial graph cutting, `bonk` is built on a **first-principles quantum-chemical and molecular dynamics engine** inspired by **QCxMS** (Grimme & Koopman's quantum-chemical mass spectrometry framework), executed entirely in-process with zero external runtime dependencies. Under the hood, `bonk` embeds a 3D conformer, a GFN2-xTB quantum-chemical engine, Born–Oppenheimer Molecular Dynamics, a RRKM/QET cascade, and much more...
+In day-to-day workflow, **`bonk`** addresses the same problem as **ChemFrag**, **MetFrag**, **MS-FINDER**, or **CFM-ID**: given a known or candidate precursor molecule and a list of experimental MS²/MS³ fragment $m/z$ peaks, it assigns chemical structures (`SMILES`) and confidence scores to each peak. However, instead of heuristic rule tables or purely combinatorial graph cutting, `bonk` is built on a **first-principles quantum-chemical and molecular dynamics engine** inspired by (QCxMS)[https://xtb-docs.readthedocs.io/en/latest/qcxms_doc/qcxms.html] and other seminal work by the group of Stefan Grimme (University of Bonn). 
 
+Under the hood, `bonk` embeds a 3D conformer, a GFN2-xTB quantum-chemical engine, Born–Oppenheimer Molecular Dynamics, a RRKM/QET cascade, and much more... and is built for speed.
 
 ## Quick Start
 
