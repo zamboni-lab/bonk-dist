@@ -73,6 +73,7 @@ Options:
   -f, --mz-file <MZ_FILE>    Optional file containing fragment m/z values (one per line, CSV/TSV, or MSP/MGF peak list)
   -a, --adduct <ADDUCT>      Precursor adduct / ionization mode [default: [M+H]+] (supports [M+H]+, [M-H]-, [M+Na]+, [M]+., etc.)
   -e, --energies <ENERGIES>  CID collision energies in eV or V [default: 14,18,24]
+      --msn <MSN>            Optional multistage tandem MS (MS2..MS5) pipeline specification (e.g. "CID 30 and then CID 35" or "CID 25 @ 159.08 -> CID 30") [aliases: --stages]
   -n, --ntraj <NTRAJ>        Number of parallel 3D GFN2-xTB Born-Oppenheimer MD trajectories [default: 100]
   -t, --tol <TOL>            Mass matching tolerance in Daltons (Da) [default: 0.05]
   -k, --top-k <TOP_K>        Maximum number of candidate SMILES structures to report per fragment m/z [default: 3]
@@ -123,4 +124,13 @@ Analyze negative-mode `[M-H]-` fragments of **α-Aminoadipic acid**:
 
 # Structured JSON output:
 .\bop.exe -c "O=C(O)C1CCCN1" -m "70.0651" --format json -o proline_fragments.json
+```
+
+### Example 7: Multistage Tandem MS (`--msn` / `MS²–MS⁵`) & Sodiated `[M+Na]+` Precursors
+```powershell
+# Multistage MS3 (CID 25 V isolating m/z 159.08 -> CID 30 V):
+.\bop.exe -c "CC1=CC(=O)CC2CCC3C4CCC(O)C4(C)CCC3C12" --msn "CID 25 @ 159.08 -> CID 30" -m "131.0855, 115.0542, 91.0542"
+
+# Sodiated [M+Na]+ precursor with cross-ring & metal-salt eliminations:
+.\bop.exe -c "OCC1OC(O)C(O)C(O)C1O" --adduct "[M+Na]+" -m "203.0526, 185.0420, 143.0315, 83.0104"
 ```
