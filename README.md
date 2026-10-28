@@ -29,7 +29,7 @@ chmod +x ./bop-macos-arm
 
 ```text
 ============================================================================
-  BOP! v0.2.1 (c) Zamboni Lab. Non-commercial use & testing only.
+  BOP! v0.3.0 (c) Zamboni Lab. Non-commercial use & testing only.
 ============================================================================
   Precursor : CC(=O)Oc1ccccc1C(=O)O  (C9H8O4, [M+H]+ m/z = 181.04954)
 ----------------------------------------------------------------------------
